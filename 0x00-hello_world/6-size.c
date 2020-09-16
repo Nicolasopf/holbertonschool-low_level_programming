@@ -1,9 +1,9 @@
 #include <stdio.h>
-/*
-* main - Entry point, prints all sizeof
-*
-* Return: Always 0
-*/
+/**
+ * main - Entry point, prints all sizeof
+ *
+ * Return: Always 0
+ */
 
 int main(void)
 {
