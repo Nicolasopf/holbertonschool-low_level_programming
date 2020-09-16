@@ -1,11 +1,13 @@
 #include <stdio.h>
-/**
+/*
 * main - Entry point, prints all sizeof
 *
 * Return: Always 0
 */
+
 int main(void)
 {
+
 char ba;
 int bb;
 long bc;
