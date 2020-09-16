@@ -12,7 +12,7 @@ char ba;
 int bb;
 long bc;
 double bd;
-float be:
+float be;
 
 printf("Size of a char: %d byte(s)\n", sizeof(ba));
 printf("Size of an int: %d byte(s)\n", sizeof(bb));
