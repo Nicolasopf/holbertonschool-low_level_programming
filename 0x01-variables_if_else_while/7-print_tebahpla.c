@@ -11,8 +11,10 @@ int main(void)
 {
         char c;
 
-        for (c = 'z'; c >= 'a'; c--)
-                putchar(c);
-        putchar('\n');
-        return (0);
+	do {
+		for (c = 'z'; c >= 'a'; c--)
+			putchar(c);
+	} while (c > 'a');
+	putchar('\n');
+return (0);
 }
