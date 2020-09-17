@@ -15,9 +15,9 @@ for (c = 0; c <= 9; c++)
 putchar(c + 48);
 if (c != 9)
 {
-putchar(',')
+putchar(',');
 putchar(' ');
-}
+}}
 } while (c < 9);
 putchar('\n');
 return (0);
