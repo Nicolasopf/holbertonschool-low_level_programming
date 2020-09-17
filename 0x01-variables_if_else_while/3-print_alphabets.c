@@ -27,7 +27,9 @@ int main(void)
 
 	if (c > 'Z')
 	{
-		putchar ('\n')
+		putchar ('\n');
 	}
+
 	return (0);
+
 }
