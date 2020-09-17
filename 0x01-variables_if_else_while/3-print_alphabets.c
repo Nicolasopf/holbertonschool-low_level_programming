@@ -14,7 +14,7 @@ int main(void)
 	while (c <= 'z')
 	{
 		putchar(c);
-		ch++;
+		c++;
 	}
 
 	char c = 'A';
@@ -22,7 +22,7 @@ int main(void)
 	while (c <= 'Z')
 	{
 		putchar(c);
-		ch++;
+		c++;
 	}
 
 	if (c > 'Z')
