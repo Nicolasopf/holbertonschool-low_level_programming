@@ -12,8 +12,7 @@ int main(void)
 	do {
 		for (n = 0; n <= 9; n++)
 			putchar(n + 48);
-	}
-	while (n < 9);
+	} while (n < 9);
 	putchar('\n');
 return (0);
 }
