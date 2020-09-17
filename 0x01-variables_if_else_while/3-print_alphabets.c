@@ -16,14 +16,15 @@ int main(void)
 		putchar(c);
 		ch++;
 	}
-	
+
 	char c = 'A';
+
 	while (c <= 'Z')
 	{
 		putchar(c);
 		ch++;
 	}
-	
+
 	if (c > 'Z')
 	{
 		putchar ('\n')
