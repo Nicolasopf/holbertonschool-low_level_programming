@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  * Return: 0
@@ -15,7 +16,7 @@ int main(void)
 				if (c != 9)
 				{
 					putchar(',')
-						putchar(' ');
+					putchar(' ');
 				}
 			} while (c < 9);
 			putchar('\n');
