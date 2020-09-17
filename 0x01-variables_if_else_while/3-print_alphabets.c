@@ -1,35 +1,34 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - Entry point
- * Return: alphabet
  *
+ * Return: Alphabet
  */
-
 int main(void)
 {
 
-	char c = 'a';
+	char ch = 'a';
 
-	while (c <= 'z')
+	while (ch <= 'z')
 	{
-		putchar(c);
-		c++;
+		putchar(ch);
+		ch++;
 	}
 
-	char c = 'A';
+	ch = 'A';
 
-	while (c <= 'Z')
+	while (ch <= 'Z')
 	{
-		putchar(c);
-		c++;
-	}
+		putchar(ch);
+		ch++;
 
-	if (c > 'Z')
-	{
-		putchar ('\n');
+		if (ch > 'Z')
+		{
+			putchar('\n');
+		}
+
 	}
 
 	return (0);
-
 }
