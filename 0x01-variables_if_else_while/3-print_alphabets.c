@@ -9,15 +9,24 @@
 int main(void)
 {
 
-	char c;
+	char c = 'a';
 
-	for (c = 'a'; c <= 'z'; ++c)
+	while (c <= 'z')
 	{
 		putchar(c);
+		ch++;
 	}
-	for (c = 'A'; c <= 'Z'; ++c)
+	
+	char c = 'A';
+	while (c <= 'Z')
 	{
 		putchar(c);
+		ch++;
 	}
-	putchar('\n');
+	
+	if (c > 'Z')
+	{
+		putchar ('\n')
+	}
+	return (0);
 }
