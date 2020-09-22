@@ -1,36 +1,24 @@
+#include "holberton.h"
 #include <stdio.h>
 
 /**
  *print_to_98 - prints all number form integer to 98
- *@i: integer
+ *@a: integer
  */
 
-void print_to_98(int i)
+void print_to_98(int a)
 {
-	int a;
-
-	if (i < 98)
+	while (a != 98)
 	{
-		for (a = i; a <= 98; a++)
+		printf("%d, ", a);
+		if (a > 98)
 		{
-			if (a != 98)
-				printf("%d, ", a);
-			else
-				printf("98\n");
+			a--;
+		}
+		else if (a < 98)
+		{
+			a++;
 		}
 	}
-	else if (i == 98)
-	{
-		printf("98\n");
-	}
-	else
-	{
-		for (a = i; a >= 98; a--)
-		{
-			if (a != 98)
-				printf("%d, ", x);
-			else
-				printf("98\n");
-		}
-	}
+	printf("%d\n", 98);
 }
