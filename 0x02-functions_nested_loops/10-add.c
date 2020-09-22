@@ -7,10 +7,10 @@
  *Return: addition of two integers in vars
  */
 
-nt add(a, b)
+int add(int a, int b)
 {
 	int c;
 
 	c = a + b;
-	return (s);
+	return (c);
 }
