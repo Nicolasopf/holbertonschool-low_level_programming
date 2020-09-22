@@ -1,23 +1,32 @@
 #include "holberton.h"
-
 /**
- * print_alphabet_x10 - Prints alphabet 10 times
+ *print_alphabet_x10 - prints the alphabet 10 times
  *
  *
+ *Return: Always 0 - ok
  */
-
-
 void print_alphabet_x10(void)
 {
-	int a;
-	int r;
+	int n = 0;
 
-	for (r = 0; r <= 9; r++)
+	while (n < 10)
 	{
-		for (a = 97; a <= 122; a++)
-		{
-			_putchar(a);
-		}
-		_putchar('\n');
+		print_alphabet();
+		n++;
 	}
+}
+/**
+ *print_alphabet - prints the alphabet once
+ */
+
+void print_alphabet(void)
+{
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c = c + 1;
+	}
+	_putchar('\n');
 }
