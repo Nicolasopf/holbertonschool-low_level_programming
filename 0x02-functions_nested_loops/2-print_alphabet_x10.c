@@ -4,6 +4,8 @@
  * print_alphabet_x10 - prints the alphabet 10 times
  *
  * Description: Calls _putchar for a nested loop to print the abc 10 times
+ * 
+ * Return: 1 or 0
  */
 
 void print_alphabet_x10(void)
