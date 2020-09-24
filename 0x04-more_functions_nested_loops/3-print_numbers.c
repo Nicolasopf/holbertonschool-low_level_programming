@@ -1,17 +1,17 @@
 #include "holberton.h"
 
 /**
- * print_numbers - print digit
- * Return: 0
+ * print_numbers - prints digit
+ * Return: 0 Always
  */
 
 void print_numbers(void)
 {
-	int dig;
+	int a;
 
-	for (dig = 48; dig < 58; dig++)
+	for (a = 48; a < 58; a++)
 	{
-		_putchar(dig);
+		_putchar(a);
 	}
 	_putchar('\n');
 }
