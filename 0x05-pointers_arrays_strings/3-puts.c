@@ -2,8 +2,7 @@
 
 /**
  * _puts - put a string
- *@str: char pointer
- * Return: 0
+ * @str: array of chars
  */
 
 void _puts(char *str)
@@ -16,5 +15,5 @@ void _puts(char *str)
 		_putchar(str[i]);
 		i++;
 	}
-
+	_putchar('\n');
 }
