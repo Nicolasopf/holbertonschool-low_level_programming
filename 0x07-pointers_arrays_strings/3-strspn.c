@@ -1,27 +1,27 @@
 #include "holberton.h"
-
 /**
- * _strspn - gets the length of a prefix substring
- * @s: string
- * @accept: accepted
- * Return: length
+ * _strspn - prints buffer in hexa
+ * @s: the address of memory to print
+ * @accept: the size of the memory to print
+ * Return: s.
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	int a;
-	int b;
-	unsigned int c;
+	unsigned int a;
+	int j, i;
 
-	for (a = 0; (s[a] != '\0') && (s[a] != ' '); a++)
+	a = 0;
+
+	for (i = 0; s[i] != '\0' && s[i] != ' '; i++)
 	{
-		for (b = 0; accept[b] != '\0'; b++)
+
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[a] == accept[b])
+			if (s[i] == accept[j])
 			{
-				c++;
+				a++;
 			}
 		}
 	}
-	return (c);
+	return (a);
 }
