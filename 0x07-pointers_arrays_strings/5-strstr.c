@@ -4,17 +4,18 @@
  * strstr - locate a substring
  * @haystack: string
  * @needle: substring
+ * Return: pointer or null
  */
 
 char *_strstr(char *haystack, char *needle)
 {
 	int a;
-	int b;
-	int c;
+	int b = 0;
+	int c = 0;
 
-	for (a = 0; haystack[a] != '\0'; a++)
+	for (a = 0; haystack[a]; a++)
 	{
-		for (b = 0; needle[b] != '\0'; b++)
+		for (b = 0; needle[b]; b++)
 		{
 			if (haystack[a] == needle[b])
 				break;
