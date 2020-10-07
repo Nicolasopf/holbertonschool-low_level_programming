@@ -1,48 +1,42 @@
 #include "holberton.h"
-
 /**
- * _pal - checks if string is palindrome
- * @s: string to analyze
- * @l: length of string
- * Return: 1 if a string is a palindrome and 0 if not
+ * palind2 - obtains length of a
+ * @a: string
+ * @l: integer to count length
+ * Return: success 1, error -1 is returned
  */
 
-int _pal(char *s, int l)
+int palind2(char *a, int l)
 {
-	if (s[0] == s[l])
-	{
-		_pal(s + 1, l - 1);
+	if (*a == 0)
+		return (l - 1);
+	return (palind2(a + 1, l + 1));
+}
+/**
+ * palind3 - compares string & string reverse
+ * @a: string
+ * @l: length
+ * Return: 1, on error, -1 is returned
+ */
+
+int palind3(char *a, int l)
+{
+	if (*a != *(a + l))
+		return (0);
+	else if (*a == 0)
 		return (1);
-	}
-	else
-		return (0);
+	return (palind3(a + 1, l - 2));
 }
-
 /**
- * _length - calcules the length of the string
- * @s: string to analyze
- * @l: length of string
- * Return: length of string
+ * is_palindrome - checks if a string is a palindrome
+ * @s: string to analy
+ * Return: 1, on error, -1 is returned
+ *p
  */
-
-int _length(char *s, int l)
-{
-	if (s[0])
-		return (1 + _length(s + 1, l));
-	else
-		return (0);
-}
-
-/**
- * is_palindrome - returns if a string is a palindrome
- * @s: string to analyze
- * Return: 1 if a string is a palindrome and 0 if not
- */
-
 int is_palindrome(char *s)
 {
 	int l;
 
-	l = _length(s, 0);
-	return (_pal(s, l - 1));
+	l = palind2(s, 0);
+	return (palind3(s, l));
 }
