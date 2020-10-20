@@ -1,5 +1,5 @@
-#ifndef dog
-#define dog
+#ifndef dog_h_
+#define dog_h_
 
 struct dog
 {
@@ -8,4 +8,4 @@ struct dog
 	float age;
 };
 
-#endif /* dog */
+#endif /* dog_h_ */
