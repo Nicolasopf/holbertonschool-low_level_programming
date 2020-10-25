@@ -1,0 +1,1 @@
+This is another project for holberton, this project is about variadic functions.
