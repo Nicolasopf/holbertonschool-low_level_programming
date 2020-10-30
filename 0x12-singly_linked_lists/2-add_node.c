@@ -9,13 +9,11 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	int i;
+	unsigned int i;
 	list_t *nombre;
 
 	if (!head)
-	{
 		return (NULL);
-	}
 	while (str[i])
 		i++;
 	nombre = malloc(sizeof(list_t));
