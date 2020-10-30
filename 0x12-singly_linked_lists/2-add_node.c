@@ -1,17 +1,17 @@
 #include "lists.h"
 
 /**
- *
- *
- *
+ * add_node - Adds a new node
+ * @head: pointer to list
+ * @str: string
+ * Return: pointer to head or NULL if fail
  */
 
 list_t *add_node(list_t **head, const char *str)
 {
 	int i;
-	size_t n;
-
 	list_t *nombre;
+
 	if (!head)
 	{
 		return (NULL);
