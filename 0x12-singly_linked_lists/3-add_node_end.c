@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- *
- *
- *
+ * add_node_end - Add a node at the end
+ * @head: pointer to list
+ * @str: string
+ * Return: nombre or NULL if fails
  */
 
 list_t *add_node_end(list_t **head, const char *str)
