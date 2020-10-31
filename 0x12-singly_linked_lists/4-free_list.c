@@ -5,7 +5,7 @@
  * @head: pointer to the list
  */
 
-void free_list(list_t *head);
+void free_list(list_t *head)
 {
 	if (head)
 	{
