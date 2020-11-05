@@ -1,3 +1,12 @@
+#include "lists.h"
+
+/**
+ * delete_nodeint_at_index - function that deletes a node in specific position
+ * @head: pointer to pointer to head
+ * @index: index to delete node
+ * Return: 1 or -1
+ */
+
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *tt, *tmp;
