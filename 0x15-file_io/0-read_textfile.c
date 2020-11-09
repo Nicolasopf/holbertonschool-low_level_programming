@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
- *
+ * read_textfile - Read the text of a file
+ * @filename: name of the file
+ * @letters: Number letters to write
+ * Return: number of letter, or 0 if file cann't be oppened or read,
+ * if filename is NULL or if write doesn't write the amount of bytes.
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -35,7 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buff);
 		return (0);
 	}
-	close (fi);
-	free (buff);
+	close(fi);
+	free(buff);
 	return (rd);
 }
