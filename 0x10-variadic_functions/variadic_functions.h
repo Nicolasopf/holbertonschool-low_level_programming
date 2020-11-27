@@ -10,6 +10,12 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+/**
+ * struct type - structure for types.
+ * @tp: str type of char.
+ * @f: pointer to function that prints.
+ */
+
 typedef struct type
 {
 	char *tp;
