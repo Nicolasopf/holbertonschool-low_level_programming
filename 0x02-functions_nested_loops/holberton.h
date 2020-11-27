@@ -5,7 +5,7 @@ int _putchar(char c);
 void print_alphabet(void);
 void last(int x, int n);
 void print_alphabet_x10(void);
-void print_times_table(int n)
+void print_times_table(int n);
 int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
