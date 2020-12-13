@@ -9,13 +9,13 @@
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *last, *new;
+	dlistint_t *last = NULL, *new = NULL;
 
 	new = malloc(sizeof(dlistint_t));
-	if (*head == NULL)
-		return (addd_dnodeint(head, n));
 	if (!new)
 		return (NULL);
+	if (*head == NULL)
+		return (addd_dnodeint(head, n));
 	last = *head;
 	while (last)
 	{
@@ -32,9 +32,16 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	return (new);
 }
 
+/**
+ * addd_dnodeint - Add a new node at the head of a list.
+ * @head: Head of the list.
+ * @n: value of n.
+ * Return: Return the new node
+ */
+
 dlistint_t *addd_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *new;
+	dlistint_t *new = NULL;
 
 	new = malloc(sizeof(dlistint_t));
 	if (!new)
