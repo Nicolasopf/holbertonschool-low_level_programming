@@ -16,13 +16,15 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (!key || !ht || !*key)
 		return (NULL);
 	idx = key_index((unsigned char *)key, ht->size);
-	if (!ht->array[idx])
-		return (NULL);
-	node = ht->array[idx];
-	while (node)
+	if (ht->array[idx])
 	{
-		if (!strcmp(node->key, key))
-			return (node->value);
-		node = node->next
+		node = ht->array[idx];
+		while (node)
+		{
+			if (!strcmp(node->key, key))
+				return (node->value);
+			node = node->next;
+		}
 	}
+	return (NULL);
 }
