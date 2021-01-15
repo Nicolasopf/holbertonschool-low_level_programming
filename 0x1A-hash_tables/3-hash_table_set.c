@@ -13,8 +13,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int idx = 0;
 	hash_node_t *new, *tmp;
 
-	if (!ht || !key || !*key )
-		return 0;
+	if (!ht || !key || !*key)
+		return (0);
 	idx = key_index((unsigned char *)key, ht->size);
 
 	if (ht->array[idx])
@@ -24,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			if (!(strcmp(tmp->key, key)))
 			{
-				free (tmp->value);
+				free(tmp->value);
 				tmp->value = strdup(value);
 				return (1);
 			}
