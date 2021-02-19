@@ -4,24 +4,17 @@
 
 def island_perimeter(grid):
     """ Return the perimeter of an island """
-    # f = 0
-    # h = 0
-    # for row in range(len(grid)):
-    #     for c in range(len(grid[row])):
-    #         if grid[row][c] == 1 and grid[row+1][c]:
-    #             h += 1
-    #         elif grid[row][c] == 1 and grid[row][c+1]:
-    #             f += 1
-    # h += 1
-    # f += 1
-    # return (f+h) * 2
-
-    sum = 0
-    x = grid.copy()
-    for i in range(len(x)):
-        x[i] = list(filter((0).__ne__, x[i]))
-    for i in range(len(x)):
-        for c in range(len(x[i])):
-            if 1 in x[i]:
-                sum += 1
-    return (sum+1) * 2
+    rows, columns, perimeter = len(grid), len(grid[0]), 0
+    for row in range(rows):
+        for position in range(columns):
+            if grid[row][position] == 0:
+                continue
+            if row == 0 or grid[row - 1][position] == 0:
+                perimeter += 1
+            if row == rows - 1 or grid[row + 1][position] == 0:
+                perimeter += 1
+            if position == 0 or grid[row][position - 1] == 0:
+                perimeter += 1
+            if position == columns - 1 or grid[row][position + 1] == 0:
+                perimeter += 1
+    return perimeter
