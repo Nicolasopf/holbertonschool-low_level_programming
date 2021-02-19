@@ -16,6 +16,12 @@ def island_perimeter(grid):
     # f += 1
     # return (f+h) * 2
 
+    sum = 0
     x = grid.copy()
-    x(filter(lambda a: a != 0, x))
-    return x
+    for i in range(len(x)):
+        x[i] = list(filter((0).__ne__, x[i]))
+    for i in range(len(x)):
+        for c in range(len(x[i])):
+            if 1 in x[i]:
+                sum += 1
+    return (sum+1) * 2
